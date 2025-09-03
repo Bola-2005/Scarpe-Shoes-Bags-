@@ -1,0 +1,154 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #212529;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* روابط */
+a {
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #007bff;
+}
+
+/* البودي */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* خلفية فاتحة */
+  color: #212529;
+}
+
+h1, h2, h3, h4 {
+  color: #212529;
+  font-weight: 700;
+}
+
+/* شبكة المنتجات */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  padding: 30px 20px;
+}
+
+/* ستايل الكروت */
+.product-card {
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* العناوين */
+.product-card h5 {
+  margin: 10px 0 5px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.product-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #28a745; /* السعر باللون الأخضر */
+  font-weight: bold;
+}
+
+/* زرار الكارت */
+.product-card button {
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 0.95em;
+  font-weight: 600;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.2s;
+}
+.product-card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.07);
+}
+
+
+.banner {
+  width: 100%;
+  max-width: 1200px;      /* أقصى عرض */
+  height: 400px;          /* ارتفاع ثابت للبانر */
+  margin: 0 auto 30px;    /* توسيط مع مسافة تحت */
+  border-radius: 12px;    /* زوايا ناعمة */
+  background-image: url('public/images/a8eceafd-605e-49ba-891c-04b4886ef71b.png');
+  background-size: contain; /* يظهر الصورة كلها بدون قص */
+  background-repeat: no-repeat;
+  background-position: center; /* يضع الصورة في الوسط */
+  background-color: #fff; /* لون خلفية يظهر إذا كان فيه فراغ */
+}
+
+/* جميع العناصر تأخذ عرض الشاشة بالكامل داخل الحاوية */
+#root {
+  width: 100%;
+  max-width: 414px;       /* عرض الهاتف */
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* الصور داخل الكروت والمنتجات */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* كروت المنتجات */
+.product-card,
+.card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* أزرار وتنسيقات النصوص تبقى مرنة */
+button {
+  width: 100%;        /* يمكن تعديل حسب الحاجة */
+  max-width: 200px;
+  margin: 5px auto;
+}
+
+/* تضمن النصوص والخطوط تظهر صحيحة */
+body, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
